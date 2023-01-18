@@ -101,15 +101,14 @@ button {
   align-items: center;
 }
 
-.menu-list {
-  display: none;
+.logo {
+text-decoration: none;
 }
 
-/*
 .menu-list {
   margin-left: 76px;
 }
-*/
+
 .web {
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -184,10 +183,6 @@ button {
   margin-left: auto;
 }
 
-.contacts {
-  display: none;
-}
-
 .menu-link:hover,
 .menu-link:focus,
 .contact-link:hover,
@@ -206,6 +201,31 @@ button {
 
 .contacts .contacts-item + .contacts-item {
   padding-left: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-list {
+  display: none;}
+
+  .contacts {
+  display: none;
+}
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-open-icon {
+    display: none;
+  }
+}
+
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-elements {
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*Hero*//*
