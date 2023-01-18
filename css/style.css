@@ -291,6 +291,21 @@ button {
   color: #2e2f42;
 }
 
+.contacts-mobmenu {
+ 
+}
+
+.contacts-mobmenu-tel {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: var(--primary-brand-color);
+}
+
+@media screen and (min-width: 796px) {
+}
+
 /*Hero*/ /*
 .hero {
   background: var(--header-color);
