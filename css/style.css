@@ -83,7 +83,7 @@ button {
 }
 
 /*Header*/
-/*
+
 .page-header {
   position: fixed;
   width: 100%;
@@ -94,17 +94,22 @@ button {
   z-index: 100;
 }
 
+
 .header-elements,
 .nav-list {
   display: flex;
   align-items: center;
-  width: 1158px;
 }
 
 .menu-list {
-  margin-left: 76px;
+  display: none;
 }
 
+/*
+.menu-list {
+  margin-left: 76px;
+}
+*/
 .web {
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -175,7 +180,12 @@ button {
 }
 
 .contacts {
+  display: flex;
   margin-left: auto;
+}
+
+.contacts {
+  display: none;
 }
 
 .menu-link:hover,
@@ -185,19 +195,19 @@ button {
   color: var(--primary-brand-color);
 }
 
+.mobile-menu-open-icon {
+  fill: #000000;
+}
+
 .contact-link {
   color: var(--main-text-color);
   transition: color var(--transition);
 }
 
-.contacts {
-  display: flex;
-}
-
 .contacts .contacts-item + .contacts-item {
   padding-left: 40px;
 }
-*/
+
 /*Hero*//*
 .hero {
   background: var(--header-color);
