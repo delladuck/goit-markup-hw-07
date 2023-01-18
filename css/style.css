@@ -58,13 +58,32 @@ button {
 }
 
 .container {
+ width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+  width: 428px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;}
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+  width: 736px;}
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
   width: 1158px;
   padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  padding-right: 15px;}
 }
 
 /*Header*/
+/*
 .page-header {
   position: fixed;
   width: 100%;
@@ -79,6 +98,7 @@ button {
 .nav-list {
   display: flex;
   align-items: center;
+  width: 1158px;
 }
 
 .menu-list {
@@ -177,8 +197,8 @@ button {
 .contacts .contacts-item + .contacts-item {
   padding-left: 40px;
 }
-
-/*Hero*/
+*/
+/*Hero*//*
 .hero {
   background: var(--header-color);
   background-image: linear-gradient(
@@ -238,8 +258,9 @@ button {
   height: 120px;
   margin-bottom: 48px;
 }
+*/
 
-/*Benefits*/
+/*Benefits*//*
 .bnf-icon-list {
   display: flex;
   justify-content: center;
@@ -293,9 +314,9 @@ button {
   font-size: 20px;
   line-height: 1.2;
 }
-
+*/
 /*What are we going*/
-
+/*
 .wwad-box {
   padding-bottom: 120px;
 }
@@ -305,9 +326,9 @@ button {
   justify-content: space-between;
   margin-top: 72px;
 }
-
+*/
 /*Our team*/
-
+/*
 .team-box {
   background: #f4f4fd;
   padding-top: 120px;
@@ -378,8 +399,8 @@ button {
   padding-top: 130px;
   padding-bottom: 120px;
 }
-
-/*Customers*/
+*/
+/*Customers*//*
 .customers-list {
   display: flex;
   justify-content: center;
@@ -405,8 +426,8 @@ button {
   border: 1px solid var(--primary-brand-color);
   border-radius: 4px;
 }
-
-/*Portfolio*/
+*/
+/*Portfolio*//*
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -524,7 +545,7 @@ button {
 }
 
 /*Footer*/
-
+/*
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -637,8 +658,8 @@ button {
   fill: #fff;
   padding-left: 16px;
 }
-
-/*Modal window*/
+*/
+/*Modal window*//*
 .backdrop {
   position: fixed;
   top: 0;
@@ -697,9 +718,9 @@ button {
   background: #404bbf;
   fill: #fff;
 }
-
+*/
 /*Modal form*/
-
+/*
 .callback {
   display: flex;
   justify-content: center;
@@ -859,3 +880,6 @@ button {
   color: #ffffff;
   background: #404bbf;
 }
+*/
+
+
