@@ -215,12 +215,6 @@ button {
     padding-bottom: 24px;
   }
 
-  @media screen and (min-width: 768px) {
-    .mobile-menu-open-icon {
-      display: none;
-    }
-  }
-
   .header-elements {
     align-items: center;
     justify-content: space-between;
@@ -231,82 +225,127 @@ button {
     height: 22px;
   }
 
-  .mobile-menu-open {
-    width: 28px;
-    height: 28px;
-    background-color: transparent;
-    border: none;
-    padding: 0;
+  @media screen and (max-width: 767px) {
+    .mobile-menu-open {
+      width: 28px;
+      height: 28px;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+
+    .mobile-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      z-index: 100;
+      padding: 80px 51px 40px 40px;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity var(--transition), visibility var(--transition);
+    }
+
+    .mobile-menu.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .mobile-menu-close-btn {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: transparent;
+      background: #e7e9fc;
+      padding: 0;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .web,
+    .studio {
+      line-height: 1.17;
+    }
   }
 
-  .mobile-menu {
-    position: fixed;
+  .mm-menu-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .mobile-menu-item {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+
+  .mm-contacts-items {
+    display: block;
+  }
+
+  .contacts-mobmenu-tel {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--primary-brand-color);
+  }
+
+  .contacts-mobmenu-email {
+    margin-top: 40px;
+    margin-bottom: 48px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+
+  .mm-soc-items {
+    display: flex;
+    gap: 56px;
+  }
+
+  .mm-soc-item-link {
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    z-index: 100;
-    padding: 80px 51px 40px 40px;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity var(--transition), visibility var(--transition);
-  }
-
-  .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
-
-  .mobile-menu-close-btn {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
+    background-color: var(--primary-brand-color);
     border-radius: 50%;
-    background-color: transparent;
-    background: #e7e9fc;
-    padding: 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .web,
-  .studio {
-    line-height: 1.17;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition);
   }
 }
 
-.mobile-menu-item {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu-open-icon {
+    display: none;
+  }
 }
 
-.contacts-mobmenu {
- 
-}
 
-.contacts-mobmenu-tel {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.11;
-  text-transform: capitalize;
-  color: var(--primary-brand-color);
-}
-
-@media screen and (min-width: 796px) {
-}
-
-/*Hero*/ /*
+/*Hero*/
 .hero {
   background: var(--header-color);
   background-image: linear-gradient(
@@ -366,9 +405,8 @@ button {
   height: 120px;
   margin-bottom: 48px;
 }
-*/
 
-/*Benefits*/ /*
+/*Benefits*/
 .bnf-icon-list {
   display: flex;
   justify-content: center;
@@ -422,9 +460,9 @@ button {
   font-size: 20px;
   line-height: 1.2;
 }
-*/
+
 /*What are we going*/
-/*
+
 .wwad-box {
   padding-bottom: 120px;
 }
@@ -436,7 +474,7 @@ button {
 }
 */
 /*Our team*/
-/*
+
 .team-box {
   background: #f4f4fd;
   padding-top: 120px;
@@ -507,7 +545,7 @@ button {
   padding-top: 130px;
   padding-bottom: 120px;
 }
-*/
+
 /*Customers*/ /*
 .customers-list {
   display: flex;
@@ -535,7 +573,7 @@ button {
   border-radius: 4px;
 }
 */
-/*Portfolio*/ /*
+/*Portfolio*/
 .portfolio {
   display: flex;
   flex-wrap: wrap;
