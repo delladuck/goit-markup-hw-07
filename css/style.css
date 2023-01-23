@@ -251,6 +251,7 @@ button {
   }
 }
 
+/*Tablet*/
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -346,20 +347,32 @@ button {
   .contacts-item {
     height: 16px;
   }
-
-  
-}
-/*
-.contacts .contacts-item + .contacts-item {
-  padding-left: 40px;
 }
 
-.header-elements {
-    align-items: center;
-    justify-content: space-between;
+.contacts {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1200px) {
+  .menu-list {
+    margin-left: 76px;
   }
- 
-*/
+
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
 
 /*Hero*/
 .hero {
