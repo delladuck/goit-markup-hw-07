@@ -70,7 +70,7 @@
           </svg>
         </button>
         <ul class="mm-menu-items-list">
-          <li><a href="./index.html" class="link mobile-menu-item">Studio</a
+          <li><a href="./index.html" class="link mobile-menu-item mm-current-menu-link">Studio</a
               ></li>
           <li><a href="./portfolio.html" class="link mobile-menu-item">Portfolio</a></li>
           <li><a href="" class="link mobile-menu-item">Contacts</a></li>
@@ -131,63 +131,67 @@
       </section>
 
       <!--Benefits-->
-      <!-- <section class="bnfts-box">
+      <section class="bnfts-box">
         <div class="container">
           <h2 class="hide">Benefits</h2>
           <ul class="bnf-icon-list">
             <li class="bnf-item">
               <div>
-                <svg class="bnf-item" width="64" height="64">
+                <svg width="64" height="64">
                   <use href="./img/icons.svg#icon-Vector"></use>
                 </svg>
               </div>
             </li>
             <li class="bnf-item">
               <div>
-                <svg class="bnf-item" width="64" height="64">
+                <svg width="64" height="64">
                   <use href="./img/icons.svg#icon-Vector-2"></use>
                 </svg>
               </div>
             </li>
             <li class="bnf-item">
               <div>
-                <svg class="bnf-item" width="64" height="64">
+                <svg width="64" height="64">
                   <use href="./img/icons.svg#icon-Vector-3"></use>
                 </svg>
               </div>
             </li>
             <li class="bnf-item">
               <div>
-                <svg class="bnf-item" width="64" height="64">
+                <svg width="64" height="64">
                   <use href="./img/icons.svg#icon-Vector-4"></use>
                 </svg>
               </div>
             </li>
           </ul>
           <ul class="list benefits">
-            <li>
-              <h3 class="third-header bnft-name">Strategy</h3>
+            <li class="bnfts">
+              <h2 class="bnft-mob-header">Strategy</h2>
+              <h3 class="third-header">Strategy</h3>
               <p class="bnft-item-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
-              <h3 class="third-header bnft-name">Punctuality</h3>
+            <li class="bnfts">
+              <h2 class="bnft-mob-header">Punctuality</h2>
+              <h3 class="third-header">Punctuality</h3>
               <p class="bnft-item-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
-              <h3 class="third-header bnft-name">Diligence</h3>
+            <li class="bnfts">
+              <h2 class="bnft-mob-header">Diligence</h2>
+              <h3 class="third-header">Diligence</h3>
               <p class="bnft-item-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
-              <h3 class="third-header bnft-name">Technologies</h3>
+            <li class="bnfts">
+              <h2 class="bnft-mob-header">Technologies</h2>
+              <h3 class="third-header">Technologies</h3>
               <p class="bnft-item-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -195,9 +199,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--What are we doing-->
-      <!-- <section class="wwad-box">
+      <section class="wwad-box">
         <div class="container">
           <h2 class="secondary-header">What are we doing</h2>
           <ul class="list wwad">
@@ -208,18 +212,23 @@
             <li><img src="./img/3.jpg" width="360" alt="Mobile phone" /></li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Our team-->
-      <!-- <section class="team-box">
+      <section class="team-box">
         <div class="container">
           <h2 class="secondary-header ot-header">Our Team</h2>
           <ul class="list ot-cards">
             <li class="ot-item">
               <a href="">
-                <img src="./img/4.jpg" width="264" alt="Mark Guerrero"
-              /></a>
+                 <picture>
+                <source srcset="./img/4-desktop.jpg 1x, ./img/4-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/4-mobile.jpg 1x, ./img/4-mobile@2x.jpg 2x" media="(min-width: 320px)" />
+              <img src="./img/4-mobile.jpg" width="264" alt="Mark Guerrero"
+              />
+              </picture>
+                </a>
               <div class="team-item-text">
-                <h3 class="third-header">Mark Guerrero</h3>
+                <h3 class="team-name">Mark Guerrero</h3>
                 <div class="ot-jobtitle">
                   <p>Product Designer</p>
                   <ul class="soc-items-list">
@@ -234,22 +243,19 @@
                     <li class="soc-item">
                       <a class="soc-item-link" href="">
                         <svg class="soc-icon" width="16" height="13">
-                          <use href="./img/icons.svg#icon-twitter"></use></svg
-                      ></a>
+                          <use href="./img/icons.svg#icon-twitter"></use></svg></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" height="16">
-                          <use href="./img/icons.svg#icon-facebook"></use></svg
-                      ></a>
+                          <use href="./img/icons.svg#icon-facebook"></use></svg></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" width="16" height="16">
-                          <use href="./img/icons.svg#icon-linkedin"></use></svg
-                      ></a>
+                          <use href="./img/icons.svg#icon-linkedin"></use></svg></a>
                     </li>
                   </ul>
                 </div>
@@ -257,10 +263,14 @@
             </li>
             <li class="ot-item">
               <a href="">
-                <img src="./img/5.jpg" width="264" alt="Tom Ford"
-              /></a>
+                 <picture>
+                <source srcset="./img/5-desktop.jpg 1x, ./img/5-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/5-mobile.jpg 1x, ./img/5-mobile@2x.jpg 2x" media="(min-width: 320px)" />
+               <img src="./img/5-mobile.jpg" width="264" alt="Tom Ford"/>
+              </picture>
+                </a>
               <div class="team-item-text">
-                <h3 class="third-header">Tom Ford</h3>
+                <h3 class="team-name">Tom Ford</h3>
                 <div class="ot-jobtitle">
                   <p>Frontend Developer</p>
                   <ul class="soc-items-list">
@@ -275,32 +285,33 @@
                     <li class="soc-item">
                       <a class="soc-item-link" href="">
                         <svg class="soc-icon" width="16" height="13">
-                          <use href="./img/icons.svg#icon-twitter"></use></svg
-                      ></a>
+                          <use href="./img/icons.svg#icon-twitter"></use></svg></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" height="16">
-                          <use href="./img/icons.svg#icon-facebook"></use></svg
-                      ></a>
+                          <use href="./img/icons.svg#icon-facebook"></use></svg></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" width="16" height="16">
-                          <use href="./img/icons.svg#icon-linkedin"></use></svg
-                      ></a>
+                          <use href="./img/icons.svg#icon-linkedin"></use></svg></a>
                     </li>
                   </ul>
                 </div>
               </div>
             </li>
             <li class="ot-item">
-              <a href=""></a>
-              <img src="./img/6.jpg" width="264" alt="Camila Garcia" />
+              <a href="">
+              <picture>
+                <source srcset="./img/6-desktop.jpg 1x, ./img/6-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/6-mobile.jpg 1x, ./img/6-mobile@2x.jpg 2x" media="(min-width: 320px)" />
+                <img src="./img/6-mobile.jpg" width="264" alt="Camila Garcia" />
+              </picture></a>
               <div class="team-item-text">
-                <h3 class="third-header">Camila Garcia</h3>
+                <h3 class="team-name">Camila Garcia</h3>
                 <div class="ot-jobtitle">
                   <p>Marketing</p>
                   <ul class="soc-items-list">
@@ -315,22 +326,19 @@
                     <li class="soc-item">
                       <a class="soc-item-link" href="">
                         <svg class="soc-icon" width="16" height="13">
-                          <use href="./img/icons.svg#icon-twitter"></use></svg
-                      ></a>
+                          <use href="./img/icons.svg#icon-twitter"></use></svg></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" height="16">
-                          <use href="./img/icons.svg#icon-facebook"></use></svg
-                      ></a>
+                          <use href="./img/icons.svg#icon-facebook"></use></svg></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" width="16" height="16">
-                          <use href="./img/icons.svg#icon-linkedin"></use></svg
-                      ></a>
+                          <use href="./img/icons.svg#icon-linkedin"></use></svg></a>
                     </li>
                   </ul>
                 </div>
@@ -338,10 +346,13 @@
             </li>
             <li class="ot-item">
               <a href="">
-                <img src="./img/7.jpg" width="264" alt="Daniel Wilson" />
+                <source srcset="./img/7-desktop.jpg 1x, ./img/7-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./img/7-mobile.jpg 1x, ./img/7-mobile@2x.jpg 2x" media="(min-width: 320px)" />
+              <img src="./img/7-mobile.jpg" width="264" alt="Daniel Wilson" />
+              </picture>
               </a>
               <div class="team-item-text">
-                <h3 class="third-header">Daniel Wilson</h3>
+                <h3 class="team-name">Daniel Wilson</h3>
                 <div class="ot-jobtitle">
                   <p>UI Designer</p>
                   <ul class="soc-items-list">
@@ -356,22 +367,19 @@
                     <li class="soc-item">
                       <a class="soc-item-link" href="">
                         <svg class="soc-icon" width="16" height="13">
-                          <use href="./img/icons.svg#icon-twitter"></use></svg
-                      ></a>
+                          <use href="./img/icons.svg#icon-twitter"></use></svg></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" height="16">
-                          <use href="./img/icons.svg#icon-facebook"></use></svg
-                      ></a>
+                          <use href="./img/icons.svg#icon-facebook"></use></svg></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" width="16" height="16">
-                          <use href="./img/icons.svg#icon-linkedin"></use></svg
-                      ></a>
+                          <use href="./img/icons.svg#icon-linkedin"></use></svg></a>
                     </li>
                   </ul>
                 </div>
@@ -380,6 +388,7 @@
           </ul>
         </div>
       </section>
+      <!--
       <section class="customers">
         <h2 class="secondary-header ot-header">Customers</h2>
         <ul class="customers-list">
