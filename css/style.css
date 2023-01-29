@@ -220,6 +220,7 @@ button {
   }
 
   .mm-contacts-items {
+    width: 100%;
     display: block;
   }
 
@@ -243,7 +244,7 @@ button {
 
   .mm-soc-items {
     display: flex;
-    gap: 56px;
+    justify-content: space-between;
   }
 
   .mm-soc-item-link {
@@ -944,8 +945,7 @@ button {
 
 .ft-soc-items-list {
   display: flex;
-  justify-content: center;
-  justify-content: space-between;
+  gap: 16px;
 }
 
 .ft-soc-item-link {
@@ -1077,9 +1077,9 @@ button {
   }
 }
 
-/*Desktop Footer*/ 
+/*Desktop Footer*/
 @media screen and (min-width: 1199px) {
-.footer-wrapper {
+  .footer-wrapper {
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -1092,10 +1092,7 @@ button {
     flex-direction: row;
     gap: 120px;
   }
-
-
 }
-
 
 /*Modal window*/ /*
 .backdrop {
