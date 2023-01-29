@@ -67,6 +67,8 @@ button {
 
 .container {
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -943,7 +945,7 @@ button {
 .ft-soc-items-list {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  justify-content: space-between;
 }
 
 .ft-soc-item-link {
@@ -1091,7 +1093,7 @@ button {
     gap: 120px;
   }
 
-  
+
 }
 
 
