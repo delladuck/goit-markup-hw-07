@@ -271,6 +271,7 @@ button {
   }
 
   .page-header {
+    width: 100%;
     position: fixed;
     padding-top: 24px;
     padding-bottom: 22px;
@@ -284,6 +285,7 @@ button {
   .header-elements,
   .nav-list {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
