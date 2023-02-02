@@ -67,16 +67,14 @@ button {
 
 .container {
   width: 100%;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 428px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
@@ -89,8 +87,6 @@ button {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -276,10 +272,9 @@ button {
 
   .page-header {
     position: fixed;
-    width: 100%;
     padding-top: 24px;
     padding-bottom: 22px;
-    left: 0px;
+    left: 0;
     top: 0;
     background-color: #fff;
     border-bottom: 1px solid #e7e9fc;
@@ -377,7 +372,6 @@ button {
 
 /*Mobile*/
 .hero {
-  min-height: 432px;
   background: var(--header-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -430,7 +424,7 @@ button {
   background: #404bbf;
 }
 
-@media screen and (min-device-pizrl-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero {
@@ -445,7 +439,6 @@ button {
 /*Tablet*/
 @media screen and (min-width: 768px) {
   .hero {
-    min-height: 436px;
     background: var(--header-color);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -473,7 +466,7 @@ button {
   }
 }
 
-@media screen and (min-device-pizrl-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero {
@@ -511,7 +504,7 @@ button {
   }
 }
 
-@media screen and (min-device-pizrl-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero {
@@ -588,7 +581,7 @@ button {
 
 /*Benefits Desktop*/
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .bnfts-box {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -633,7 +626,7 @@ button {
   }
 }
 
-/*What are we going*/
+/*What are we doing*/
 .wwad-box {
   padding-bottom: 120px;
 }
@@ -719,7 +712,7 @@ button {
 
 /*Tablet*/
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .team-box {
     background: #f4f4fd;
     padding-top: 96px;
@@ -770,7 +763,7 @@ button {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .customers-list {
     width: 555px;
     margin-left: auto;
@@ -779,7 +772,7 @@ button {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .customers-list {
     column-gap: 24px;
   }
@@ -788,13 +781,6 @@ button {
     width: 168px;
     height: 88px;
     padding: 16px 32px;
-    fill: #afb1b8;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: fill var(--transition), border var(--transition);
   }
 }
 
@@ -917,6 +903,7 @@ button {
 
 /*Footer*/
 .footer {
+  width: 100%;
   padding-top: 96px;
   padding-bottom: 96px;
   background-color: var(--header-color);
@@ -1043,7 +1030,7 @@ button {
   }
 
   .ft-modal-form-input {
-    width: 396px;
+    width: 300px;
     margin-bottom: 16px;
   }
 }
@@ -1111,7 +1098,7 @@ button {
   }
 }
 
-/*Modal window Mobile*/ 
+/*Modal window Mobile*/
 
 .backdrop {
   position: fixed;
@@ -1170,27 +1157,27 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-.modal {
-  padding: 72px 16px 24px 16px;
-  width: 392px;
-  height: 586px;
-}
+  .modal {
+    padding: 72px 16px 24px 16px;
+    width: 392px;
+    height: 586px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-.modal {
-  padding: 72px 24px 24px 24px;
-  width: 408px;
-  height: 586px;
-}
+  .modal {
+    padding: 72px 24px 24px 24px;
+    width: 408px;
+    height: 586px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-.modal {
-  padding: 72px 24px 24px 24px;
-  width: 408px;
-  height: 584px;
-}
+  .modal {
+    padding: 72px 24px 24px 24px;
+    width: 408px;
+    height: 584px;
+  }
 }
 
 /*Modal form*/
@@ -1240,7 +1227,7 @@ button {
 }
 
 .modal-form-input:focus {
-  background: none ;
+  background: none;
   outline: none;
   border-color: var(--primary-brand-color);
 }
@@ -1354,4 +1341,3 @@ button {
   color: #ffffff;
   background: #404bbf;
 }
-
