@@ -148,6 +148,10 @@ button {
     align-items: center;
   }
 
+  .mm-wrapper {
+    width: 348px;
+  }
+
   .mobile-menu-open {
     width: 28px;
     height: 28px;
@@ -222,8 +226,9 @@ button {
 
   .contacts-mobmenu-tel {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 34px;
     line-height: 1.11;
+    letter-spacing: 0.01em;
     color: var(--primary-brand-color);
   }
 
@@ -239,6 +244,7 @@ button {
   }
 
   .mm-soc-items {
+    max-width: 328px;
     display: flex;
     justify-content: space-between;
   }

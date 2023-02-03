@@ -62,64 +62,77 @@
         </ul>
       </div>
 
-      <div class="mobile-menu" data-menu>
-         <div class="container">
-        <button class="mobile-menu-close-btn" data-menu-close>
-          <svg class="mobile-menu-close-icon" width="8" height="8">
-            <use href="./img/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <ul class="mm-menu-items-list">
-          <li><a href="./index.html" class="link mobile-menu-item mm-current-menu-link">Studio</a
-              ></li>
-          <li><a href="./portfolio.html" class="link mobile-menu-item">Portfolio</a></li>
-          <li><a href="" class="link mobile-menu-item">Contacts</a></li>
-        </ul>
-      </div>
-     
-       <ul class="list mm-contacts-items">
-        <li>
-            <a href="tel:+110001111111" class="contacts-mobmenu-tel link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="link"
-              ><h3 class="contacts-mobmenu-email">info@devstudio.com</h3></a
-            >
-          </li>
-        </ul>
-        
+      <div class="mobile-menu mm-wrapper" data-menu>
+        <div>
+          <button class="mobile-menu-close-btn" data-menu-close>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./img/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mm-menu-items-list">
+            <li>
+              <a
+                href="./index.html"
+                class="link mobile-menu-item mm-current-menu-link"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link mobile-menu-item"
+                >Portfolio</a
+              >
+            </li>
+            <li><a href="" class="link mobile-menu-item">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="mm-contacts">
+          <ul class="list mm-contacts-items">
+            <li>
+              <a href="tel:+110001111111" class="contacts-mobmenu-tel link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="link"
+                ><h3 class="contacts-mobmenu-email">info@devstudio.com</h3></a
+              >
+            </li>
+          </ul>
+
           <ul class="mm-soc-items">
-           <li class="soc-item">
-             <a class="mm-soc-item-link" href="">
-               <svg class="soc-icon" width="24" height="24">
+            <li class="soc-item">
+              <a class="mm-soc-item-link" href="">
+                <svg class="soc-icon" width="24" height="24">
                   <use href="./img/icons.svg#icon-instagram"></use>
-               </svg>
-             </a>
-           </li>
-           <li class="soc-item">
-                      <a class="mm-soc-item-link" href="">
-                        <svg class="soc-icon" width="24" height="24">
-                          <use href="./img/icons.svg#icon-twitter"></use>
-                          </svg></a>
-           </li>
-           <li class="soc-item">
-                      <a class="mm-soc-item-link" href=""
-                        ><svg class="soc-icon" width="24" height="24">
-                          <use href="./img/icons.svg#icon-facebook"></use></svg></a>
-           </li>
-           <li class="soc-item">
-                      <a class="mm-soc-item-link" href=""
-                        ><svg class="soc-icon" width="24" height="24">
-                          <use href="./img/icons.svg#icon-linkedin"></use></svg></a>
-           </li>
-         </ul>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-item">
+              <a class="mm-soc-item-link" href="">
+                <svg class="soc-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="soc-item">
+              <a class="mm-soc-item-link" href=""
+                ><svg class="soc-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="soc-item">
+              <a class="mm-soc-item-link" href=""
+                ><svg class="soc-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
-    <main> 
+    <main>
       <!--Hero-->
-     <section class="hero">
+      <section class="hero">
         <div class="mh-box">
           <h1 class="main-header">Effective Solutions for Your Business</h1>
         </div>
@@ -205,11 +218,33 @@
         <div class="container">
           <h2 class="secondary-header">What are we doing</h2>
           <ul class="list wwad">
-            <li><img src="./img/1.jpg" width="360" alt="Monitor" /></li>
             <li>
-              <img src="./img/2.jpg" width="360" alt="Mobile screenshots" />
+              <picture>
+                <source
+                  srcset="./img/1.jpg 1x, ./img/1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/1.jpg" width="360" alt="Monitor" />
+              </picture>
             </li>
-            <li><img src="./img/3.jpg" width="360" alt="Mobile phone" /></li>
+            <li>
+              <picture>
+                <source
+                  srcset="./img/2.jpg 1x, ./img/2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/2.jpg" width="360" alt="Mobile screenshots" />
+              </picture>
+            </li>
+            <li>
+              <picture>
+                <source
+                  srcset="./img/3.jpg 1x, ./img/3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./img/3.jpg" width="360" alt="Mobile phone" />
+              </picture>
+            </li>
           </ul>
         </div>
       </section>
@@ -220,13 +255,22 @@
           <ul class="list ot-cards">
             <li class="ot-item">
               <a href="">
-                 <picture>
-                <source srcset="./img/4-desktop.jpg 1x, ./img/4-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
-                <source srcset="./img/4-mobile.jpg 1x, ./img/4-mobile@2x.jpg 2x" media="(min-width: 320px)" />
-              <img src="./img/4-mobile.jpg" width="264" alt="Mark Guerrero"
-              />
-              </picture>
-                </a>
+                <picture>
+                  <source
+                    srcset="./img/4-desktop.jpg 1x, ./img/4-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./img/4-mobile.jpg 1x, ./img/4-mobile@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./img/4-mobile.jpg"
+                    width="264"
+                    alt="Mark Guerrero"
+                  />
+                </picture>
+              </a>
               <div class="team-item-text">
                 <h3 class="team-name">Mark Guerrero</h3>
                 <div class="ot-jobtitle">
@@ -243,19 +287,22 @@
                     <li class="soc-item">
                       <a class="soc-item-link" href="">
                         <svg class="soc-icon" width="16" height="13">
-                          <use href="./img/icons.svg#icon-twitter"></use></svg></a>
+                          <use href="./img/icons.svg#icon-twitter"></use></svg
+                      ></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" height="16">
-                          <use href="./img/icons.svg#icon-facebook"></use></svg></a>
+                          <use href="./img/icons.svg#icon-facebook"></use></svg
+                      ></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" width="16" height="16">
-                          <use href="./img/icons.svg#icon-linkedin"></use></svg></a>
+                          <use href="./img/icons.svg#icon-linkedin"></use></svg
+                      ></a>
                     </li>
                   </ul>
                 </div>
@@ -263,12 +310,18 @@
             </li>
             <li class="ot-item">
               <a href="">
-                 <picture>
-                <source srcset="./img/5-desktop.jpg 1x, ./img/5-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
-                <source srcset="./img/5-mobile.jpg 1x, ./img/5-mobile@2x.jpg 2x" media="(min-width: 320px)" />
-               <img src="./img/5-mobile.jpg" width="264" alt="Tom Ford"/>
-              </picture>
-                </a>
+                <picture>
+                  <source
+                    srcset="./img/5-desktop.jpg 1x, ./img/5-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./img/5-mobile.jpg 1x, ./img/5-mobile@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./img/5-mobile.jpg" width="264" alt="Tom Ford" />
+                </picture>
+              </a>
               <div class="team-item-text">
                 <h3 class="team-name">Tom Ford</h3>
                 <div class="ot-jobtitle">
@@ -285,19 +338,22 @@
                     <li class="soc-item">
                       <a class="soc-item-link" href="">
                         <svg class="soc-icon" width="16" height="13">
-                          <use href="./img/icons.svg#icon-twitter"></use></svg></a>
+                          <use href="./img/icons.svg#icon-twitter"></use></svg
+                      ></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" height="16">
-                          <use href="./img/icons.svg#icon-facebook"></use></svg></a>
+                          <use href="./img/icons.svg#icon-facebook"></use></svg
+                      ></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" width="16" height="16">
-                          <use href="./img/icons.svg#icon-linkedin"></use></svg></a>
+                          <use href="./img/icons.svg#icon-linkedin"></use></svg
+                      ></a>
                     </li>
                   </ul>
                 </div>
@@ -305,11 +361,21 @@
             </li>
             <li class="ot-item">
               <a href="">
-              <picture>
-                <source srcset="./img/6-desktop.jpg 1x, ./img/6-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
-                <source srcset="./img/6-mobile.jpg 1x, ./img/6-mobile@2x.jpg 2x" media="(min-width: 320px)" />
-                <img src="./img/6-mobile.jpg" width="264" alt="Camila Garcia" />
-              </picture></a>
+                <picture>
+                  <source
+                    srcset="./img/6-desktop.jpg 1x, ./img/6-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./img/6-mobile.jpg 1x, ./img/6-mobile@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./img/6-mobile.jpg"
+                    width="264"
+                    alt="Camila Garcia"
+                  /> </picture
+              ></a>
               <div class="team-item-text">
                 <h3 class="team-name">Camila Garcia</h3>
                 <div class="ot-jobtitle">
@@ -326,19 +392,22 @@
                     <li class="soc-item">
                       <a class="soc-item-link" href="">
                         <svg class="soc-icon" width="16" height="13">
-                          <use href="./img/icons.svg#icon-twitter"></use></svg></a>
+                          <use href="./img/icons.svg#icon-twitter"></use></svg
+                      ></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" height="16">
-                          <use href="./img/icons.svg#icon-facebook"></use></svg></a>
+                          <use href="./img/icons.svg#icon-facebook"></use></svg
+                      ></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" width="16" height="16">
-                          <use href="./img/icons.svg#icon-linkedin"></use></svg></a>
+                          <use href="./img/icons.svg#icon-linkedin"></use></svg
+                      ></a>
                     </li>
                   </ul>
                 </div>
@@ -346,10 +415,21 @@
             </li>
             <li class="ot-item">
               <a href="">
-                <source srcset="./img/7-desktop.jpg 1x, ./img/7-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
-                <source srcset="./img/7-mobile.jpg 1x, ./img/7-mobile@2x.jpg 2x" media="(min-width: 320px)" />
-              <img src="./img/7-mobile.jpg" width="264" alt="Daniel Wilson" />
-              </picture>
+                <picture>
+                  <source
+                    srcset="./img/7-desktop.jpg 1x, ./img/7-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./img/7-mobile.jpg 1x, ./img/7-mobile@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./img/7-mobile.jpg"
+                    width="264"
+                    alt="Daniel Wilson"
+                  />
+                </picture>
               </a>
               <div class="team-item-text">
                 <h3 class="team-name">Daniel Wilson</h3>
@@ -367,19 +447,22 @@
                     <li class="soc-item">
                       <a class="soc-item-link" href="">
                         <svg class="soc-icon" width="16" height="13">
-                          <use href="./img/icons.svg#icon-twitter"></use></svg></a>
+                          <use href="./img/icons.svg#icon-twitter"></use></svg
+                      ></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" height="16">
-                          <use href="./img/icons.svg#icon-facebook"></use></svg></a>
+                          <use href="./img/icons.svg#icon-facebook"></use></svg
+                      ></a>
                     </li>
 
                     <li class="soc-item">
                       <a class="soc-item-link" href=""
                         ><svg class="soc-icon" width="16" height="16">
-                          <use href="./img/icons.svg#icon-linkedin"></use></svg></a>
+                          <use href="./img/icons.svg#icon-linkedin"></use></svg
+                      ></a>
                     </li>
                   </ul>
                 </div>
@@ -388,7 +471,7 @@
           </ul>
         </div>
       </section>
-      
+
       <section class="customers container">
         <h2 class="secondary-header ot-header">Customers</h2>
         <ul class="customers-list">
@@ -436,54 +519,54 @@
           </li>
         </ul>
       </section>
-    </main> 
+    </main>
     <!--Footer-->
     <footer class="footer">
       <div class="footer-wrapper container">
         <div class="ft-text-social">
           <div class="ft-left">
-          <div class="ft-logo">
-            <a href="index.html" class="link"
-              ><span class="web">WEB</span
-              ><span class="studio studio-down">STUDIO</span></a
-            >
+            <div class="ft-logo">
+              <a href="index.html" class="link"
+                ><span class="web">WEB</span
+                ><span class="studio studio-down">STUDIO</span></a
+              >
+            </div>
+            <p class="tagline">
+              Increase the flow of customers and<br />
+              sales for your business with digital<br />
+              marketing & growth solutions.
+            </p>
           </div>
-          <p class="tagline">
-            Increase the flow of customers and<br />
-            sales for your business with digital<br />
-            marketing & growth solutions.
-          </p>
-        </div>
-        <div class="social-media-wrapper">
-          <p class="social-media-text">Social media</p>
-          <ul class="ft-soc-items-list">
-            <li class="soc-item">
-              <a class="ft-soc-item-link" href="">
-                <svg class="soc-icon" width="24" height="24">
-                  <use href="./img/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-item">
-              <a class="ft-soc-item-link" href="">
-                <svg class="soc-icon" width="24" height="24">
-                  <use href="./img/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="soc-item">
-              <a class="ft-soc-item-link" href=""
-                ><svg class="soc-icon" width="24" height="24">
-                  <use href="./img/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="soc-item">
-              <a class="ft-soc-item-link" href=""
-                ><svg class="soc-icon" width="24" height="24">
-                  <use href="./img/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
+          <div class="social-media-wrapper">
+            <p class="social-media-text">Social media</p>
+            <ul class="ft-soc-items-list">
+              <li class="soc-item">
+                <a class="ft-soc-item-link" href="">
+                  <svg class="soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-item">
+                <a class="ft-soc-item-link" href="">
+                  <svg class="soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="soc-item">
+                <a class="ft-soc-item-link" href=""
+                  ><svg class="soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="soc-item">
+                <a class="ft-soc-item-link" href=""
+                  ><svg class="soc-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="subscribe-wrapper">
           <p class="social-media-text">Subscribe</p>
@@ -509,7 +592,6 @@
             </button>
           </form>
         </div>
-      </div>
       </div>
     </footer>
     <!--Modal window-->
@@ -587,7 +669,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> 
+    <script src="./js/modal.js"></script>
     <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
